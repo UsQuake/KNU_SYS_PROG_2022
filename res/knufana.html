@@ -1,0 +1,28 @@
+<html>
+<title>
+    KNUFANA
+</title>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <style>
+    .parent {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .box {
+    flex: 1 1 150px; /*  Stretching: */
+    /*flex: 0 1 150px;*/ /*  No stretching: */
+    margin: 5px;
+    }
+    </style>
+    <div class="parent">
+      <div class="box"><canvas  id="cpu-chart" ></canvas></div>
+      <div class="box"><canvas id="memory-chart" ></canvas></div>
+      <div class="box"><canvas  id="recv-chart" ></canvas></div>
+      <div class="box"><canvas  id="trans-chart" ></canvas></div>
+    </div>  
+    <script src="/knufana.js"></script>
+</body>
+</html>
